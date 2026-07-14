@@ -1,7 +1,9 @@
+import sys
+
 total_price = float(input("Enter the total amount\nprice:$ "))
 if total_price <= 0:
     print("ERROR: Invalid price! Enter an amount greater than 0.")
-    exit()
+    sys.exit()
 elif total_price < 100:
     final_price = total_price
 elif 100 <= total_price < 300:
